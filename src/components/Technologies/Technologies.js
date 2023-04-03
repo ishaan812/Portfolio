@@ -20,7 +20,7 @@ const Technologies = () => (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with the following technologies in the web development world. Now I'm focused towards React and Next.js.
+      I've worked with the following technologies in the web development world.
     </SectionText>
     <List>
       <ListItem>

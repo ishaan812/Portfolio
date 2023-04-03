@@ -18,6 +18,7 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { TimeLineData } from "../../constants/constants";
+import ExperienceTimeline from "./ExperienceTimeline";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -72,12 +73,12 @@ const Timeline = () => {
       <SectionDivider divider />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        Hi, I'm Infvyr - a passionate frontend developer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum cumque dolorem earum est harum impedit laborum, nobis odit porro quibusdam saepe suscipit! Accusamus adipisci aliquam amet consectetur dolore doloremque eaque earum eius, est eveniet fuga, id itaque laudantium natus nesciunt nihil obcaecati omnis possimus quibusdam repellat sed velit vero. A, accusamus, adipisci aliquam dolorem eveniet excepturi fuga incidunt libero minima nisi obcaecati quae saepe! Consectetur maiores natus reiciendis rem!
+          I am a software developer who is passionate about creating innovative and scalable solutions for various domains. I have experience in developing web applications, APIs, microservices, and databases using modern technologies and frameworks. I am also interested in Devops and cloud technologies, as I believe they are essential for delivering high-quality software products. I enjoy learning new skills and tools, collaborating with other developers, and solving complex problems.
       </SectionText>
-      <SectionText>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus amet, beatae commodi consequuntur corporis cumque dicta doloremque eaque earum enim ex excepturi exercitationem fuga inventore ipsam, iste itaque laboriosam libero maiores, maxime nisi nulla odio odit omnis possimus quaerat quam quasi rerum sequi tempore temporibus vitae voluptates. Autem doloribus, veritatis! Atque aut inventore natus nulla quaerat suscipit tempore voluptates?
-      </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      <SectionDivider divider />
+      <SectionTitle>Experience</SectionTitle>
+      <ExperienceTimeline/>
+      {/* <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode
@@ -145,7 +146,7 @@ const Timeline = () => {
             </CarouselButton>
           );
         })}
-      </CarouselButtons>
+      </CarouselButtons> */}
     </Section>
   );
 };

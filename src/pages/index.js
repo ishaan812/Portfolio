@@ -15,8 +15,11 @@ const Home = () => {
         <BgAnimation />
       </Section>
       <Timeline />
-      <Projects />
       <Technologies />
+      <Projects />
+      {/* <Certifications /> */}
+      {/* <Accomplishments/Linked In Feed /> */}
+      {/* <Contact/> */}
     </Layout>
   );
 };

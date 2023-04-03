@@ -12,14 +12,14 @@ const Header = () => {
       {route === '/' ? (
         <Div1>
           <span style={{display: 'flex', alignItems: 'center'}}>
-            @Vasile
+            @ishaan812
           </span>
         </Div1>
       ) : (
         <Div1>
           <Link href='/'>
             <a style={{display: 'flex', alignItems: 'center'}}>
-              @Infvyr
+              @ishaan812
             </a>
           </Link>
         </Div1>

@@ -1,25 +1,47 @@
 import React from 'react';
-
+import { Typewriter } from "react-simple-typewriter";
 import {Section, SectionText, SectionTitle} from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import {LeftSection} from './HeroStyles';
 
-const Hero = () => (
+const Hero = (props) => {
+  const handleType = (count) => {
+    // access word count number
+    console.log(count);
+  };
+
+  const handleDone = () => {
+    console.log(`Done after 5 loops!`);
+  };
+  return (
   <>
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Welcome To <br />
-          My Personal Portfolio
+          <span>Ishaan Shah</span>
+          {/* <br/> */}
         </SectionTitle>
         <SectionText style={{paddingBottom:0}}>
-        The purpose of this portfolio website is to quickly become familiar with my few projects and general information about me. <br/>
-          Access contact links for more details and a possible collaboration.
+        I am a<br/>
+          <Typewriter
+              words={[
+                "Software Developer",
+                "Full Stack Developer",
+                "Devops Engineer",
+                "Cloud Enthusiast",
+              ]}
+              loop={true}
+              cursor
+              cursorStyle="_"
+              delaySpeed={2000}
+              onLoopDone={handleDone}
+              onType={handleType}
+            />
         </SectionText>
         {/*<Button onClick={props.handleClick}>Learn More</Button>*/}
       </LeftSection>
     </Section>
   </>
-);
+)};
 
 export default Hero;

@@ -5,6 +5,7 @@ export const CarouselContainer = styled.ul`
   padding: 0;
   list-style:none;
   display: flex;
+  flex-direction: column;
   justify-content: space-between; 
   /* overflow-x: hidden; */
 

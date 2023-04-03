@@ -54,7 +54,7 @@ export const PageTitle = styled.h1`
 
 export const SectionTitle = styled.h2`
   font-weight: 800;
-  font-size: ${(props) => props.main ? '65px' : '56px'};
+  font-size: ${(props) => props.main ? '100px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
   width: max-content;
   max-width: 100%;
@@ -81,8 +81,8 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
   max-width: 800px;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 36px;
+  line-height: 50px;
   font-weight: 300;
   padding-bottom: 3.6rem;
 
